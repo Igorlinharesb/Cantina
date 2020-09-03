@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.qp = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
+            this.fechapedido = new System.Windows.Forms.Button();
             this.cliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,14 +60,14 @@
             this.qp.Size = new System.Drawing.Size(103, 26);
             this.qp.TabIndex = 1;
             // 
-            // button1
+            // fechapedido
             // 
-            this.button1.Location = new System.Drawing.Point(404, 103);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Fechar Pedido";
-            this.button1.UseVisualStyleBackColor = true;
+            this.fechapedido.Location = new System.Drawing.Point(404, 103);
+            this.fechapedido.Name = "fechapedido";
+            this.fechapedido.Size = new System.Drawing.Size(133, 33);
+            this.fechapedido.TabIndex = 2;
+            this.fechapedido.Text = "Fechar Pedido";
+            this.fechapedido.UseVisualStyleBackColor = true;
             // 
             // cliente
             // 
@@ -127,14 +127,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 172);
+            this.ClientSize = new System.Drawing.Size(572, 159);
             this.Controls.Add(this.qg);
             this.Controls.Add(this.qm);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cliente);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.fechapedido);
             this.Controls.Add(this.qp);
             this.Controls.Add(this.label1);
             this.Name = "TelaNovaVenda";
@@ -151,7 +151,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown qp;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button fechapedido;
         private System.Windows.Forms.TextBox cliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
