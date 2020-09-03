@@ -1,0 +1,13 @@
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\bin\Debug\Cantina.exe.config
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\bin\Debug\Cantina.exe
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\bin\Debug\Cantina.pdb
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.csprojAssemblyReference.cache
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.Properties.Resources.resources
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.csproj.GenerateResource.cache
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.csproj.CoreCompileInputs.cache
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.exe
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.pdb
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.TelaNovaVenda.resources
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.TelaListaVendas.resources
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.TelaRelatorio.resources
+C:\Users\IgorL\Documents\Codigos\C#\Cantina\Cantina\obj\Debug\Cantina.TelaInicial.resources
