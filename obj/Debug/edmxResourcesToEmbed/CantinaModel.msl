@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cantinaDBModelStoreContainer" CdmEntityContainer="cantinaDBEntities">
+    <EntitySetMapping Name="pedidoes">
+      <EntityTypeMapping TypeName="cantinaDBModel.pedido">
+        <MappingFragment StoreEntitySet="pedido">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="quentinhasp" ColumnName="quentinhasp" />
+          <ScalarProperty Name="quentinhasm" ColumnName="quentinhasm" />
+          <ScalarProperty Name="quentinhasg" ColumnName="quentinhasg" />
+          <ScalarProperty Name="entrega" ColumnName="entrega" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
