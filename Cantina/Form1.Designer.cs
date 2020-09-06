@@ -345,20 +345,20 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(11, 136);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(136, 14);
+            this.label14.Size = new System.Drawing.Size(134, 15);
             this.label14.TabIndex = 23;
             this.label14.Text = "**  Taxa de Entrega variável.";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(11, 109);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(244, 14);
+            this.label11.Size = new System.Drawing.Size(267, 15);
             this.label11.TabIndex = 21;
             this.label11.Text = "*  Ao comprar mais de 4 quentinhas ganhe um desconto";
             // 
@@ -368,9 +368,9 @@
             this.label10.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(11, 83);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(236, 15);
+            this.label10.Size = new System.Drawing.Size(276, 15);
             this.label10.TabIndex = 20;
-            this.label10.Text = "Quentinhas G ..................... R$ 11,00";
+            this.label10.Text = "Quentinhas G ............................... R$ 11,00";
             // 
             // label12
             // 
@@ -378,9 +378,9 @@
             this.label12.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(11, 53);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(226, 15);
+            this.label12.Size = new System.Drawing.Size(266, 15);
             this.label12.TabIndex = 19;
-            this.label12.Text = "Quentinhas M .................... R$ 9,00";
+            this.label12.Text = "Quentinhas M .............................. R$ 9,00";
             // 
             // label9
             // 
@@ -388,17 +388,17 @@
             this.label9.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(11, 22);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(227, 15);
+            this.label9.Size = new System.Drawing.Size(267, 15);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Quentinhas P ..................... R$ 7,00";
+            this.label9.Text = "Quentinhas P ............................... R$ 7,00";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(21, 120);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 14);
+            this.label13.Size = new System.Drawing.Size(50, 15);
             this.label13.TabIndex = 22;
             this.label13.Text = "de 2,15%.";
             // 
@@ -425,6 +425,8 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(830, 652);
+            this.MinimumSize = new System.Drawing.Size(830, 652);
             this.Name = "TelaInicial";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -39,7 +39,7 @@ namespace Cantina
         {
             using (cantinaDBEntities db = new cantinaDBEntities())
             {
-                dgvPedido.DataSource = db.pedidos.ToList<pedido>();
+                dgvPedido.DataSource = db.pedidos.OrderByDescending(p=>p.Id).ToList<pedido>();
                 int tot = db.pedidos.ToList<pedido>().Count();
                 totalvendas.Text = String.Format("Total de Vendas: {0}", tot);
             }
@@ -97,8 +97,8 @@ namespace Cantina
                 "Quentinhas P: {1}\n" +
                 "Quentinhas M: {2}\n" +
                 "Quentinhas G: {3}\n" +
-                "Taxa de Entrega: R$ {4},00\n" +
-                "Total: R$ {5}",
+                "Taxa de Entrega: R$ {4:C}\n" +
+                "Total: R$ {5:C}",
                 c, qp, qm, qg, ent, total);
 
 
