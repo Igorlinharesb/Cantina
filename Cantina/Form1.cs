@@ -19,6 +19,7 @@ namespace Cantina
         public TelaInicial()
         {
             InitializeComponent();
+
         }
 
         
@@ -78,7 +79,20 @@ namespace Cantina
             total = Math.Round(total, 2);
 
 
-            string message = String.Format("Deseja confirmar este pedido:\n\n" +
+            if (c == "")
+            {
+                MessageBox.Show("O nome do cliente não pode ficar vazio!", "Aviso");
+            }
+
+            else
+            {
+                if(qp + qm + qg == 0)
+                {
+                    MessageBox.Show("É necessário adicionar pelo menos uma quentinha para concluir o pedido!", "Aviso!");
+                }
+                else
+                {
+                    string message = String.Format("Deseja confirmar este pedido:\n\n" +
                 "Cliente: {0}\n" +
                 "Quentinhas P: {1}\n" +
                 "Quentinhas M: {2}\n" +
@@ -88,33 +102,34 @@ namespace Cantina
                 c, qp, qm, qg, ent, total);
 
 
-            if (MessageBox.Show(message, "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                using (cantinaDBEntities db = new cantinaDBEntities())
-                {
-                    novopedido.cliente = c;
-                    novopedido.quentinhasp = qp;
-                    novopedido.quentinhasm = qm;
-                    novopedido.quentinhasg = qg;
-                    novopedido.entrega = ent;
-                    novopedido.total = (decimal) total;
-
-                    if (novopedido.Id == 0) // Para inserção 
+                    if (MessageBox.Show(message, "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        db.pedidos.Add(novopedido);
-                    }
-                    else // Para atualização
-                    {
-                        db.Entry(novopedido).State = EntityState.Modified;
-                    }
-                    db.SaveChanges();
+                        using (cantinaDBEntities db = new cantinaDBEntities())
+                        {
+                            novopedido.cliente = c;
+                            novopedido.quentinhasp = qp;
+                            novopedido.quentinhasm = qm;
+                            novopedido.quentinhasg = qg;
+                            novopedido.entrega = ent;
+                            novopedido.total = (decimal)total;
 
+                            if (novopedido.Id == 0) // Para inserção 
+                            {
+                                db.pedidos.Add(novopedido);
+                            }
+                            else // Para atualização
+                            {
+                                db.Entry(novopedido).State = EntityState.Modified;
+                            }
+                            db.SaveChanges();
+
+                        }
+                        Clear();
+                        MessageBox.Show("Pedido salvo com sucesso!!!", "Salvo com sucesso");
+                        PovoaDataGrid();
+                    }
                 }
-                Clear();
-                MessageBox.Show("Pedido salvo com sucesso!!!", "Salvo com sucesso");
-                PovoaDataGrid();
             }
-
         }
 
         private void dgvPedido_DoubleClick(object sender, EventArgs e)
@@ -190,6 +205,11 @@ namespace Cantina
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Clear();
         }
     }
 }

@@ -30,17 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.pedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cantinaDBDataSet = new Cantina.cantinaDBDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.cantinaDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cantinaDBDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pedidoTableAdapter = new Cantina.cantinaDBDataSetTableAdapters.pedidoTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.pedidoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cantinaDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cantinaDBDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cantinaDBDataSetBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pedidoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pedidoBindingSource
+            // 
+            this.pedidoBindingSource.DataMember = "pedido";
+            this.pedidoBindingSource.DataSource = this.cantinaDBDataSet;
+            // 
+            // cantinaDBDataSet
+            // 
+            this.cantinaDBDataSet.DataSetName = "cantinaDBDataSet";
+            this.cantinaDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -52,13 +62,8 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(646, 464);
+            this.reportViewer1.Size = new System.Drawing.Size(747, 464);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // cantinaDBDataSet
-            // 
-            this.cantinaDBDataSet.DataSetName = "cantinaDBDataSet";
-            this.cantinaDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cantinaDBDataSetBindingSource
             // 
@@ -70,11 +75,6 @@
             this.cantinaDBDataSetBindingSource1.DataSource = this.cantinaDBDataSet;
             this.cantinaDBDataSetBindingSource1.Position = 0;
             // 
-            // pedidoBindingSource
-            // 
-            this.pedidoBindingSource.DataMember = "pedido";
-            this.pedidoBindingSource.DataSource = this.cantinaDBDataSet;
-            // 
             // pedidoTableAdapter
             // 
             this.pedidoTableAdapter.ClearBeforeFill = true;
@@ -83,15 +83,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 464);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(747, 464);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "TelaRelatorio";
             this.Text = "Relatório";
             this.Load += new System.EventHandler(this.TelaRelatorio_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pedidoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cantinaDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cantinaDBDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cantinaDBDataSetBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pedidoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
