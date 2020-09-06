@@ -39,6 +39,8 @@ namespace Cantina
             using (cantinaDBEntities db = new cantinaDBEntities())
             {
                 dgvPedido.DataSource = db.pedidos.ToList<pedido>();
+                int tot = db.pedidos.ToList<pedido>().Count();
+                totalvendas.Text = String.Format("Total de Vendas: {0}", tot);
             }
         }
 

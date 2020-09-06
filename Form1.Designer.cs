@@ -50,6 +50,7 @@
             this.excluipedido = new System.Windows.Forms.Button();
             this.taxaentrega = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
+            this.totalvendas = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quentp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quentm)).BeginInit();
@@ -71,7 +72,7 @@
             this.dgvPedido.Location = new System.Drawing.Point(12, 237);
             this.dgvPedido.Name = "dgvPedido";
             this.dgvPedido.ReadOnly = true;
-            this.dgvPedido.Size = new System.Drawing.Size(790, 315);
+            this.dgvPedido.Size = new System.Drawing.Size(790, 299);
             this.dgvPedido.TabIndex = 1;
             this.dgvPedido.DoubleClick += new System.EventHandler(this.dgvPedido_DoubleClick);
             // 
@@ -246,11 +247,21 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Cantina do Tio Bill";
             // 
+            // totalvendas
+            // 
+            this.totalvendas.AutoSize = true;
+            this.totalvendas.Location = new System.Drawing.Point(29, 539);
+            this.totalvendas.Name = "totalvendas";
+            this.totalvendas.Size = new System.Drawing.Size(88, 13);
+            this.totalvendas.TabIndex = 17;
+            this.totalvendas.Text = "Total de Vendas:";
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 564);
+            this.Controls.Add(this.totalvendas);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.taxaentrega);
             this.Controls.Add(this.excluipedido);
@@ -302,6 +313,7 @@
         private System.Windows.Forms.Button excluipedido;
         private System.Windows.Forms.NumericUpDown taxaentrega;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label totalvendas;
     }
 }
 
