@@ -162,7 +162,9 @@ namespace Cantina
 
         private void gerarelatorio_Click(object sender, EventArgs e)
         {
-            
+            TelaRelatorio rel = new TelaRelatorio();
+
+            rel.Show();
         }
 
         private void excluipedido_Paint(object sender, PaintEventArgs e)
