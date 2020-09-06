@@ -1,2 +1,0 @@
-# Arquivos temporários do Vsual Studio
-.vs

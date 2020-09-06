@@ -1,2 +1,5 @@
 # Arquivos temporários do Vsual Studio
-.vs
+Cantina/.vs
+
+# Pasta de Pacotes
+packages
