@@ -80,13 +80,19 @@ o gerenciamento de vendas de quentinhas da Cantina do Tio Bill. O mesmo deve tra
 
   ##### 4.2 Cadastro de Pedidos
   <p> Para cadastro de novos pedidos basta o usuário preencher os locais mostrados abaixo na imagem corretamente, e clicar no botão "Salvar Pedido". </p>
+  
   ![Cadastro de Pedidos](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/02-Pedido-Preenchido.png)
+  
   <p> Caso o usuário peencha os locais corretamente, após clicar no botão de "Salvar Pedido" deve ser mostrada uma caixa de mensagem, solicitando a confirmação do cadastro, conforme é mostrado na imagem abaixo. </p>
+  
   ![Confirmação de Pedido](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/03-Confirma%C3%A7%C3%A3oPedido.png)
+  
   <p> E por fim é mostrado uma mensagem confirmando que o pedido de fato foi cadastrado no banco de dados.</p>
+  
   ![Pedido Salvo](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/04-Pedido-Salvo.png)
   
   <p>Não é possível realizar o cadastro de pedidos cujo o nome do cliente se encontra nulo. Caso o usuário tente fazer isso, será mostrada uma mensagem conforme a imagem abaixo:</p>
+  
   ![Cliente Vazio](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/5%20-%20Usuario%20Vazio.png)
   
   <p> Também não é possível que o cliente cadastre um pedido com 0 quentinhas. Caso o usuário tente fazer isso será mostrada uma mensagem conforme a imagem abaixo: </p>
@@ -95,10 +101,12 @@ o gerenciamento de vendas de quentinhas da Cantina do Tio Bill. O mesmo deve tra
   
   ##### 4.3 Listagem de Pedidos
   <p>Na página inicial do sistema também é mostrada a lista de pedidos cadastrados, conforme a imagem abaixo:</p>
+  
   ![Pedido Salvo](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/04-Pedido-Salvo.png)
 
   ##### 4.3 Alteração e Exclusão de Pedidos
   <p> Caso seja cadastrado algum pedido com erros do banco de dados, o usuário tem a opção de editar ou excluir o pedido. Para isso, basta o usuário dar um duplo clique na linha do pedido o qual ele deseja editar, e logo em seguida os dados do pedido serão preenchidos no local do cadastro, o botão de "Salvar Pedido" muda para "Atualizar Pedido", e o botão "Excluir Pedido" é habilitado. A imagem abaixo ilustra o processo:</p>
+  
   ![Editar Pedido](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/8%20-%20Editar%20Pedido.png)
   
   <p>Caso o usuário queira editar o pedido, basta atualizar os campos preenchidos, e clicar no botão "Atualizar Pedido". Após isso, assim como no cadastro de pedidos, é mostrada uma caixa de confirmação da alteração:</p>
@@ -106,7 +114,9 @@ o gerenciamento de vendas de quentinhas da Cantina do Tio Bill. O mesmo deve tra
   ![Confirma Edição](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/8.2%20%20-%20Confirma%20Edi%C3%A7%C3%A3o.png)
   
   <p> Caso o usuário opte por excluir o registro, basta clicar no botão "Excluir Pedido". Apóis isso, é mostrada uma caixa de confirmação da exclusão, conforme mostrado abaixo: </p>
+  
   ![Confirma Exclusão](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/8.3%20-%20Confirma%20Exclus%C3%A3o.png)
+  
   ![Exclusão Confirmada](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/8.4%20-%20Excluido.png)
    
 
