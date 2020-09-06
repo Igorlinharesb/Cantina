@@ -52,6 +52,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.totalvendas = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quentp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quentm)).BeginInit();
@@ -149,7 +149,6 @@
             this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Cliente";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ncliente
             // 
@@ -157,7 +156,6 @@
             this.ncliente.Name = "ncliente";
             this.ncliente.Size = new System.Drawing.Size(117, 20);
             this.ncliente.TabIndex = 3;
-            this.ncliente.TextChanged += new System.EventHandler(this.ncliente_TextChanged);
             // 
             // quentp
             // 
@@ -259,7 +257,6 @@
             this.excluipedido.Text = "Excluir Pedido";
             this.excluipedido.UseVisualStyleBackColor = false;
             this.excluipedido.Click += new System.EventHandler(this.excluipedido_Click);
-            this.excluipedido.Paint += new System.Windows.Forms.PaintEventHandler(this.excluipedido_Paint);
             // 
             // taxaentrega
             // 
@@ -309,7 +306,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(488, 160);
             this.panel1.TabIndex = 18;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(280, 136);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(78, 13);
+            this.linkLabel1.TabIndex = 16;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Limpar campos";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label7
             // 
@@ -394,7 +401,6 @@
             this.label13.Size = new System.Drawing.Size(48, 14);
             this.label13.TabIndex = 22;
             this.label13.Text = "de 2,15%.";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label8
             // 
@@ -405,17 +411,6 @@
             this.label8.Size = new System.Drawing.Size(190, 26);
             this.label8.TabIndex = 20;
             this.label8.Text = "Nossos Preços";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(280, 136);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(78, 13);
-            this.linkLabel1.TabIndex = 16;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Limpar campos";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // TelaInicial
             // 
