@@ -17,17 +17,17 @@ Histórico de Revisões
 
   |**Data**    | **Versão** |  **Descrição**                                                                        |    **Autor**   |
   |------------|------------| --------------------------------------------------------------------------------------|----------------|
-  | 06/09/2020 | 0.1        | Cadastro, e exclusão de pedidos e geração de relatório de vendas                      | @Igorlinharesb |
-  | Em breve   | 0.2        | Armazenar datas dos pedidos                                                           | @IgorLinharesb |
+  | 06/09/2020 | 0.1        | Cadastro e exclusão de pedidos e geração de relatório de vendas                       | @Igorlinharesb |
+  | Em breve   | 0.2        | Armazenanamento das datas dos pedidos                                                 | @IgorLinharesb |
   | Em breve   | 0.3        | Cadastro de clientes                                                                  | @Igorlinharesb |
-  | Em breve   | 0.4        | Gerar relatórios elaborados, com filtros e gráficos                                   | @Igorlinharesb |
+  | Em breve   | 0.4        | Geração relatórios elaborados, com filtros e gráficos                                 | @Igorlinharesb |
 
 
 Sumário
 =======
  1. Introdução<br>
     1.1 Visão Geral<br>
-    1.2 Descriçao Geral do Sistema<br>
+    1.2 Descrição Geral do Sistema<br>
 
  2. Ferramentas Utilizadas no Desenvolvimento<br>
  3. Funcionalidades<br>
