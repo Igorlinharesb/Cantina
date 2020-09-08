@@ -44,7 +44,7 @@ Sumário
 ##### 1.1 Visão Geral
 
 <p> Este projeto está focado no usuário que necessita de uma interface amigável. Promovendo por meio da simplicidade de layout a descomplexidade no uso, facilidade até mesmo ao mais inexperiente usuário. Este projeto traz o
-desenvolvimento de um sistema de gerenciamento de pós-graduação, de forma a
+desenvolvimento de um sistema de gerenciamento de vendas de quentinhas, de forma a
 facilitar os processos em um sistema computacional simples e fácil de usar. Este sistema deve fazer com que o processo de registro e acompanhamento de vendas seja o mais automatizado possível. </p>
 
 ##### 1.2 Descrição Geral do sistema
@@ -96,6 +96,7 @@ o gerenciamento de vendas de quentinhas da Cantina do Tio Bill. O mesmo deve tra
   ![Cliente Vazio](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/5%20-%20Usuario%20Vazio.png)
   
   <p> Também não é possível que o cliente cadastre um pedido com 0 quentinhas. Caso o usuário tente fazer isso será mostrada uma mensagem conforme a imagem abaixo: </p>
+  
   ![Pedido Vazio](https://github.com/Igorlinharesb/Cantina/blob/master/Imagens/6%20-%20Quentinhas%20Vazias.png)
   
   
